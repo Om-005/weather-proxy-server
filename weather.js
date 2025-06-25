@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const fetch = require('node-fetch');
 const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
-const API_KEY = '7c99ae09465fa43093c24c5d4d074ec7';
+const API_KEY = process.env.API_KEY;
 
 app.use(cors());
 
